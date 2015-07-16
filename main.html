@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Famous Scientists Quiz</title>
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900|Ubuntu+Condensed|Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!--<script type="text/javascript" src="js/app_jd_update.js"></script>-->
+</head>
+<body>
+	<div id="instructions">
+		<h1>Welcome to the Famous Scientists Quiz</h1>
+		<h3>The Quiz</h3>
+		<h4>You will be given 6 Questions</h4>
+		<ul>
+			<li>For each question, select the what you think the answer is</li>
+			<li>If correct, you will be prompted to the next question</li>
+			<li>If incorrect, you can try again or click the "hint" button for a clue</li>
+			<li>You can view your proggress in the progress box  on the lower left of the quiz.</li>
+		</ul>
+		<h4>Click home to return to the main page at anytime</h4>
+		<h4>Click reset to reset the quiz</h4>
+		<h3>Goodluck!</h3>
+		<div class="nav" id="understand">Got It!</div>
+	</div>
+	<div id="congratulations">
+		<h1>Congratulations!</h1>
+		<h2>You Have Completed the Quiz!</h2>
+		<div id="replay">Play Again!</div>
+	</div>
+	<div id="navigation_holder">
+		<div class="nav" id="home_nav">Home</div>
+		<div class="nav" id="rules_nav">Rules</div>
+		<div class="nav" id="restart_nav">Restart</div>
+	</div>
+	<!--holder for quiz app-->
+	<div id="quiz_holder">
+		<!--question number-->
+		<div id="question_number">Question Number</div>
+		<!--question holder-->
+		<div id="question_holder">Quiz Question</div>
+		<!--holder for choice columns-->
+		<div id="choices_holder">
+			<!--left choice column-->
+			<div class="choice_split" id="choices_left"></div>
+			<!--right choice column-->
+			<div class="choice_split" id="choices_right"></div>
+		</div>
+		<!--holder for input feedback-->
+		<!--<div id="feedback_holder"></div>-->
+		<!--holder for dynamic question hint
+		<div id="hint_display"></div>-->
+	</div>
+	<div id="progress_holder">
+		<div class="progress" id="you_got">Questions Answered</div>
+		<div class="progress" id="number_correct">One</div>
+		<div class="progress" id="total_possible">Out of Six!</div>
+	</div>
+</body>
+</html>
